@@ -3,18 +3,37 @@
   margin: 0;
   padding: 0;
 }
+:root{
+  --steel-blue:var(--steel-blue);
+  --dim-gray:var(--dim-gray);
+  --rose-brown:(rosybrown);
+  --bright-yellow:var(--bright-yellow)
+  --left-250:250px;
+  --zero:0px;
+}
 html,
 body {
   font-size: 62.5%;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-main {
+.container{
   position: relative;
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   margin: 4rem auto;
+  text-align: center;
+line-height: 500px;
+background-color: palegreen;
+font-size: 2.5rem;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+text-transform: capitalize;
+position: relative;
 }
-
+.box{
+  width: 150px;
+  height: 150px;
+  transform: ;
+}
 .message {
   position: absolute;
   width: 100%;
@@ -49,6 +68,8 @@ main {
   background: dimgray;
 }
 
+
+  
 
 
 main:hover .top-left {
