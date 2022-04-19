@@ -3,80 +3,94 @@
   margin: 0;
   padding: 0;
 }
-:root{
-  --steel-blue:var(--steel-blue);
-  --dim-gray:var(--dim-gray);
-  --rose-brown:(rosybrown);
-  --bright-yellow:var(--bright-yellow)
-  --left-250:250px;
-  --zero:0px;
+:root {
+  --steel-blue: steelblue;
+  --dim-gray: dimgray;
+  --rose-brown: rosybrown;
+  --bright-yellow: yellow;
 }
 html,
 body {
   font-size: 62.5%;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.container{
-  position: relative;
+.container {
   height: 300px;
   width: 300px;
   margin: 4rem auto;
   text-align: center;
-line-height: 500px;
-background-color: palegreen;
-font-size: 2.5rem;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-text-transform: capitalize;
-position: relative;
+  line-height: 300px;
+  background-color: palegreen;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  position: relative;
 }
-.box{
+.box {
   width: 150px;
   height: 150px;
-  transform: ;
-}
-.message {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  font-size: 2rem;
-  font-family: Arial, Helvetica, sans-serif;
-  /* center the message */
-  display: grid;
-  place-items: center;
+  transition: 1s;
+}
+.h1 {
+  position: absolute;
+
+  /* center the h1 */
+  text-align: center;
 }
 
 /* all the boxes should get a delayed rotation */
-.top-left,
-.top-right,
-.bottom-left,
-.bottom-right {
-  position: absolute;
-  width: 50%;
-  height: 50%;
-  transition: 1s;
-}
 
-.top-left {
+.blue {
   top: 0;
   left: 0;
-  background: steelblue;
+  background: var(--steel-blue);
 }
 
-.top-right {
+.dimgray {
   top: 0px;
   left: 50%;
-  background: dimgray;
+  background: var(--dim-gray);
+}
+.rosybrown {
+  right: 0%;
+  bottom: 0%;
+  background: var(--rose-brown);
 }
 
-
-  
-
-
-main:hover .top-left {
-  transform: translateX(-100px) rotate(90deg);
+.yellow {
+  left: 0%;
+  bottom: 0%;
+  background: var(--bright-yellow);
+}
+/* one can also asign various values to chanfged it.
+.container:hover .blue {
+  transform: translateX(-200px) rotate(360deg);
 }
 
-main:hover .top-right {
-  transform: translateX(100px) rotate(-90deg);
+.container:hover .dimgray {
+  transform: translateX(-200px) rotate(360deg);
 }
 
+.container:hover .yellow {
+  transform: translateX(200px) rotate(-360deg);
+}
+
+main:hover .rosybrown {
+  transform: translateX(200px) rotate(-360deg);
+}
+*/
+.container:hover .blue {
+  transform: translateX(-150px) rotate(-90deg);
+}
+
+.container:hover .dimgray {
+  transform: translateX(150px) rotate(90deg);
+}
+
+.container:hover .yellow {
+  transform: translateX(-150px) rotate(90deg);
+}
+
+main:hover .rosybrown {
+  transform: translateX(150px) rotate(-90deg);
+}
