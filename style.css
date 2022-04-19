@@ -49,7 +49,7 @@ main {
   background: dimgray;
 }
 
-..................
+
 
 main:hover .top-left {
   transform: translateX(-100px) rotate(90deg);
@@ -59,4 +59,3 @@ main:hover .top-right {
   transform: translateX(100px) rotate(-90deg);
 }
 
-..............
